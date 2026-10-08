@@ -9,3 +9,6 @@ __pycache__/
 # System & OS files
 .DS_Store
 Thumbs.db
+
+~$*.docx
+*.tmp
