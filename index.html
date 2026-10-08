@@ -8,21 +8,60 @@
     <meta name="description" content="คู่มือการใช้งาน Discord สำหรับ Innovation Lab: ศน. โคราช พื้นที่แห่งการเรียนรู้ แบ่งปัน และสร้างสรรค์นวัตกรรมการศึกษา">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .section-banner-img {
+            width: 100%;
+            max-height: 380px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+        .section-banner-img:hover {
+            transform: scale(1.01);
+        }
+        .hero-cover-img {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            margin: 1.5rem auto 2rem auto;
+            display: block;
+        }
+        .admin-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 1.3rem 2rem;
+            margin-top: 1.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     <header class="hero">
         <div class="hero-content">
             <h1><span class="emoji">📖</span> คู่มือการใช้งาน Discord</h1>
             <h2><span class="emoji">🧪</span> Innovation Lab: ศน. โคราช</h2>
+            
+            <!-- Cover 3D Illustration -->
+            <img src="images/cover_image_1784879612091.jpg" alt="Cover Innovation Lab" class="hero-cover-img">
+
             <p class="welcome-text">ยินดีต้อนรับท่านศึกษานิเทศก์ (ศน.) และกัลยาณมิตรทางวิชาการทุกท่านเข้าสู่ <strong>Innovation Lab: ศน. โคราช</strong> พื้นที่แห่งการเรียนรู้ แบ่งปัน และสร้างสรรค์นวัตกรรมการศึกษาของพวกเราค่ะ! เพื่อให้ท่านใช้งานพื้นที่นี้ได้อย่างเต็มศักยภาพ ขอแนะนำสถาปัตยกรรมของชุมชนเราดังนี้ค่ะ</p>
             
-            <div style="background: rgba(255,255,255,0.15); backdrop-filter: blur(8px); border-radius: 14px; padding: 1.2rem; margin-top: 1.5rem; border: 1px solid rgba(255,255,255,0.25);">
-                <h4 style="margin-bottom: 0.5rem; font-size: 1.15rem; color: #FEE75C;">🌟 คณะผู้ดูแลชุมชน (Community Administrators)</h4>
-                <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 0.4rem; font-size: 1rem;">
-                    <div>👩‍🏫 <strong>ศน.ศิราณี กันชัย</strong><br><span style="font-size: 0.9rem; opacity: 0.9;">ศึกษานิเทศก์ชำนาญการพิเศษ</span></div>
-                    <div>👨‍🏫 <strong>ศน.แสนยากร สายสิน</strong><br><span style="font-size: 0.9rem; opacity: 0.9;">ศึกษานิเทศก์ชำนาญการพิเศษ</span></div>
+            <!-- Admin Team Card -->
+            <div class="admin-box">
+                <h4 style="margin-bottom: 0.6rem; font-size: 1.2rem; color: #FEE75C; font-weight: 600;">🌟 คณะผู้ดูแลชุมชน (Community Administrators)</h4>
+                <div style="display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-top: 0.5rem; font-size: 1.05rem;">
+                    <div>👩‍🏫 <strong>ศน.ศิราณี กันชัย</strong><br><span style="font-size: 0.95rem; opacity: 0.9;">ศึกษานิเทศก์ชำนาญการพิเศษ</span></div>
+                    <div>👨‍🏫 <strong>ศน.แสนยากร สายสิน</strong><br><span style="font-size: 0.95rem; opacity: 0.9;">ศึกษานิเทศก์ชำนาญการพิเศษ</span></div>
                 </div>
-                <div style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.85;">สำนักงานศึกษาธิการจังหวัดนครราชสีมา</div>
+                <div style="font-size: 0.95rem; margin-top: 0.6rem; opacity: 0.9;">สำนักงานศึกษาธิการจังหวัดนครราชสีมา</div>
             </div>
         </div>
     </header>
@@ -30,6 +69,9 @@
     <main class="container">
         <!-- Section 1 -->
         <section class="card architecture" id="channel-architecture">
+            <!-- 3D Channel Architecture Illustration -->
+            <img src="images/channel_architecture_1784879622708.jpg" alt="Channel Architecture" class="section-banner-img">
+
             <h3><span class="emoji">📂</span> 1. แผนผังห้องต่างๆ (Channel Architecture)</h3>
             <p>เซิร์ฟเวอร์ของเราถูกออกแบบมาเพื่อลดความซ้ำซ้อนและเน้นการใช้งานจริงค่ะ:</p>
             
@@ -65,6 +107,9 @@
 
         <!-- Section 2 Highlighted -->
         <section class="card callout-box ai-system" id="tag-team-ai">
+            <!-- 3D AI Tag Team Illustration -->
+            <img src="images/ai_tag_team_1784879632295.jpg" alt="Tag-Team AI System" class="section-banner-img">
+
             <h3><span class="emoji">🤖</span> 2. ระบบผู้ช่วย AI แบบ Tag-Team (เลือกใช้ให้ถูกงาน)</h3>
             <p>ชุมชนของเรามี "ผู้ช่วย 2 รูปแบบ" ที่ทำงานร่วมกัน เพื่อยกระดับการทำงานวิชาการของท่านค่ะ:</p>
             
@@ -87,6 +132,9 @@
 
         <!-- Section 3 -->
         <section class="card culture" id="community-culture">
+            <!-- 3D Community Culture Illustration -->
+            <img src="images/community_culture_1784879641603.jpg" alt="Community Culture" class="section-banner-img">
+
             <h3><span class="emoji">🤝</span> 3. วัฒนธรรมของ Innovation Lab โคราช (Community Culture)</h3>
             <p>เราอยู่ร่วมกันด้วยวัฒนธรรม ไม่ใช่กฎระเบียบค่ะ:</p>
             <ol class="culture-list">
