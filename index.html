@@ -41,6 +41,36 @@
             margin-right: auto;
             box-shadow: 0 8px 20px rgba(0,0,0,0.1);
         }
+        .btn-discord-join {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            background: #5865F2;
+            color: #ffffff !important;
+            font-size: 1.25rem;
+            font-weight: 600;
+            padding: 1rem 2.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(88, 101, 242, 0.4);
+            transition: all 0.3s ease;
+            margin-top: 1.5rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn-discord-join:hover {
+            background: #4752c4;
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 15px 30px rgba(88, 101, 242, 0.6);
+        }
+        .btn-discord-pulse {
+            animation: pulse-glow 2s infinite;
+        }
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(88, 101, 242, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(88, 101, 242, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(88, 101, 242, 0); }
+        }
     </style>
 </head>
 <body>
@@ -54,6 +84,13 @@
 
             <p class="welcome-text">ยินดีต้อนรับท่านศึกษานิเทศก์ (ศน.) และกัลยาณมิตรทางวิชาการทุกท่านเข้าสู่ <strong>Innovation Lab: ศน. โคราช</strong> พื้นที่แห่งการเรียนรู้ แบ่งปัน และสร้างสรรค์นวัตกรรมการศึกษาของพวกเราค่ะ! เพื่อให้ท่านใช้งานพื้นที่นี้ได้อย่างเต็มศักยภาพ ขอแนะนำสถาปัตยกรรมของชุมชนเราดังนี้ค่ะ</p>
             
+            <!-- Quick Join Button (Top) -->
+            <div>
+                <a href="https://discord.gg/TA7944UJx" target="_blank" rel="noopener noreferrer" class="btn-discord-join btn-discord-pulse">
+                    🚀 เข้าร่วมเซิร์ฟเวอร์ Discord ทันที (คลิกที่นี่)
+                </a>
+            </div>
+
             <!-- Admin Team Card -->
             <div class="admin-box">
                 <h4 style="margin-bottom: 0.6rem; font-size: 1.2rem; color: #FEE75C; font-weight: 600;">🌟 คณะผู้ดูแลชุมชน (Community Administrators)</h4>
@@ -166,12 +203,20 @@
                 <span class="badge orange">🟧 อปท.</span>
             </div>
 
+            <!-- Call to action button inside Quest -->
+            <div style="text-align: center; margin: 1.5rem 0;">
+                <a href="https://discord.gg/TA7944UJx" target="_blank" rel="noopener noreferrer" class="btn-discord-join">
+                    ✨ เข้าสู่ห้อง #สภากาแฟ (https://discord.gg/TA7944UJx)
+                </a>
+            </div>
+
             <p class="quote"><em>"ต่างบทบาท ต่างหน้าที่ แต่มีหัวใจดวงเดียวกัน...<br>คือการยกระดับคุณภาพการศึกษาเพื่อเด็กไทยและลูกหลานชาวโคราชบ้านเราค่ะ" 🌾✨</em></p>
         </section>
     </main>
 
     <footer>
         <p>Innovation Lab: ศน. โคราช - จัดทำด้วยความมุ่งมั่นเพื่อการศึกษา</p>
+        <p style="margin-top: 0.5rem;"><a href="https://discord.gg/TA7944UJx" target="_blank" rel="noopener noreferrer" style="color: #5865F2; text-decoration: underline; font-weight: 500;">คลิกเข้าร่วม Discord Community ของเราได้ที่นี่ค่ะ</a></p>
     </footer>
 </body>
 </html>
